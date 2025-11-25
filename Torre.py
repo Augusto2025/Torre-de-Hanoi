@@ -7,6 +7,5 @@ def torre_hanoi(n, inicio, fim, meio):
     torre_hanoi(n-1, meio, fim, inicio)
 
 if __name__=='__main__':
-    # Exemplo de uso
     n = int(input("Digite o número de discos: "))
     torre_hanoi(n, "A", "C", "B")
