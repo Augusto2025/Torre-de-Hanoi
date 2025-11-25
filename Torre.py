@@ -1,9 +1,9 @@
 def torre_hanoi(n, inicio, fim, meio):
     if n == 1:
-        print(f"Mova o disco 1 de {inicio} para {fim}")
+        print(f"O disco 1 foi da torre {inicio} para torre {fim}")
         return
     torre_hanoi(n-1, inicio, meio, fim)
-    print(f"Mova o disco {n} de {inicio} para {fim}")
+    print(f"O disco {n} foi da torre {inicio} para torre {fim}")
     torre_hanoi(n-1, meio, fim, inicio)
 
 if __name__=='__main__':
