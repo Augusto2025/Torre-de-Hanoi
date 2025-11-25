@@ -7,5 +7,10 @@ def torre_hanoi(n, inicio, fim, meio):
     torre_hanoi(n-1, meio, fim, inicio)
 
 if __name__=='__main__':
-    n = int(input("Digite o número de discos: "))
+    while True:
+        n = int(input("Digite o número de discos: "))
+        if n <= 3:
+            print("Informe um número maior ou igual a 3.")
+        else:
+            break
     torre_hanoi(n, "A", "C", "B")
