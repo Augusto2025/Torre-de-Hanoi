@@ -9,7 +9,7 @@ def torre_hanoi(n, inicio, fim, meio):
 if __name__=='__main__':
     while True:
         n = int(input("Digite o número de discos: "))
-        if n <= 3:
+        if n < 3:
             print("Informe um número maior ou igual a 3.")
         else:
             break
